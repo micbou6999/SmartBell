@@ -1,38 +1,59 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Live Streaming</title>
-    <!-- Add any specific styles or scripts here -->
-    <style>
-      /* Center the content */
-      body {
-        display: flex;
-        flex-direction: column; /* Display children elements in a column */
-        justify-content: flex-start; /* Align content at the top */
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: black;
-        color: red;
-      }
+<head>
+  <title>Live Streaming</title>
+  <!-- Add any specific styles or scripts here -->
+  <style>
+    /* Center the content */
+    body {
+      display: flex;
+      flex-direction: column; /* Display children elements in a column */
+      justify-content: center; /* Align content at the center */
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #0a0a0a;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
-      /* Adjust the size of the live streaming video */
-      img {
-        width: 60%;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
+    /* Adjust the size of the live streaming video */
+    .video-container {
+      width: 80%;
+      max-width: 800px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Style the header */
+    h1 {
+      color: red;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    /* Style the footer */
+    footer {
+      color: #00ff00;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
     <!-- Add the live streaming video here -->
-  <h1>Live Streaming</h1>    
-	<img src="{{ url_for('video_feed') }}">
+    <img src="{{ url_for('video_feed') }}" alt="Live Stream">
+  </div>
+  <h1>Live Streaming</h1>
 
-    <!-- Add the text below the video feed -->
-  
+  <!-- Add the text below the video feed -->
 
- <hr>
-    <p>@2023 Created by WAVE</p>
+  <hr>
+  <footer>@2023 Created by WAVE</footer>
 
-  </body>
+</body>
 </html>
