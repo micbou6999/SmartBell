@@ -33,6 +33,10 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
     _model = createModel(context, () => EditProfileModel());
 
     _model.yourNameController ??= TextEditingController();
+    _model.addressController ??= TextEditingController();
+    _model.cityController ??= TextEditingController();
+    _model.userKeyController ??= TextEditingController();
+    _model.userIDController ??= TextEditingController();
   }
 
   @override
@@ -294,10 +298,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         ? addressUsersRecordList.first
                         : null;
                     return TextFormField(
-                      controller: _model.addressController ??=
-                          TextEditingController(
-                        text: addressUsersRecord?.address,
-                      ),
+                      controller: _model.addressController,
                       obscureText: false,
                       decoration: InputDecoration(
                         labelStyle: FlutterFlowTheme.of(context).bodySmall,
@@ -377,10 +378,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         ? cityUsersRecordList.first
                         : null;
                     return TextFormField(
-                      controller: _model.cityController ??=
-                          TextEditingController(
-                        text: cityUsersRecord?.city,
-                      ),
+                      controller: _model.cityController,
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'Your City',
@@ -571,10 +569,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         ? userKeyUsersRecordList.first
                         : null;
                     return TextFormField(
-                      controller: _model.userKeyController ??=
-                          TextEditingController(
-                        text: userKeyUsersRecord?.userKey,
-                      ),
+                      controller: _model.userKeyController,
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'UserKey',
@@ -653,10 +648,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                         ? userIDUsersRecordList.first
                         : null;
                     return TextFormField(
-                      controller: _model.userIDController ??=
-                          TextEditingController(
-                        text: userIDUsersRecord?.userId,
-                      ),
+                      controller: _model.userIDController,
                       obscureText: false,
                       decoration: InputDecoration(
                         labelText: 'APIToken',
@@ -749,6 +741,11 @@ class _EditProfileWidgetState extends State<EditProfileWidget> {
                           await currentUserReference!
                               .update(createUsersRecordData(
                             displayName: _model.yourNameController.text,
+                            userKey: _model.userKeyController.text,
+                            userId: _model.userIDController.text,
+                            state: _model.stateValue,
+                            city: _model.cityController.text,
+                            address: _model.addressController.text,
                           ));
                           context.safePop();
                         },
