@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "235504085161",
+    "project_id": "smartbell-372ba",
+    "storage_bucket": "smartbell-372ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235504085161:android:f67ef290f414268b9ae1b8",
+        "android_client_info": {
+          "package_name": "Robin.Do"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235504085161-pdirvkr13h06rg3o1vqs9iu5lp8opqrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVS9pUDLFwKw3p9uOfJfmQub8nztYgx20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235504085161-l10hoe9mppbm9obdoevc6dpomt17d66j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "235504085161-ip6eh9r51bsossmrhhe1h28feu5k13c5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Robin.Do"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

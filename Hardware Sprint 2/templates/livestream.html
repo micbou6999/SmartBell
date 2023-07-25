@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Live Streaming</title>
+    <!-- Add any specific styles or scripts here -->
+    <style>
+      /* Center the content */
+      body {
+        display: flex;
+        flex-direction: column; /* Display children elements in a column */
+        justify-content: flex-start; /* Align content at the top */
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+        color: red;
+      }
+
+      /* Adjust the size of the live streaming video */
+      img {
+        width: 60%;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add the live streaming video here -->
+  <h1>Live Streaming</h1>    
+	<img src="{{ url_for('video_feed') }}">
+
+    <!-- Add the text below the video feed -->
+  
+
+ <hr>
+    <p>@2023 Created by WAVE</p>
+
+  </body>
+</html>

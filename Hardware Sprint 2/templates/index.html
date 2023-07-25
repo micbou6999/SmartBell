@@ -1,0 +1,30 @@
+
+<!-- index.html -->
+<html>
+  <head>
+    <title>Front Door Bell</title>
+    <link rel="stylesheet" href='../static/style.css'/>
+	<meta http-equiv="refresh" content="1"> 
+  <style>
+    /* Change the text color to white and the background color to dark blue */
+    body {
+      color: red;
+      background-color: black;
+	font-size: 24px;
+    }
+	  a {
+    color: green;
+  }
+  </style>
+  </head>
+  <body>
+    <h1>Distance Measurement</h1>
+    <p>Distance: {{ distance }} cm</p>
+    <p>Status: {{ status_message }}</p> <!-- Display the status message here -->
+    <hr>
+    <p>@2023 Created by WAVE</p>
+
+    <!-- Add a link to the live streaming subpage -->
+    <a href="{{ url_for('livestream') }}">Live Streaming</a>
+  </body>
+</html>
