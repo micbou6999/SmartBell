@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>235504085161-ip6eh9r51bsossmrhhe1h28feu5k13c5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.235504085161-ip6eh9r51bsossmrhhe1h28feu5k13c5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAkgE3rrKOZU3eG1bKgnIHPr2r2lvavUdc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>235504085161</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Robin.Do</string>
+	<key>PROJECT_ID</key>
+	<string>smartbell-372ba</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smartbell-372ba.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:235504085161:ios:2061c463dc98beb69ae1b8</string>
+</dict>
+</plist>
