@@ -21,6 +21,7 @@
     .video-container {
       width: 80%;
       max-width: 800px;
+      display: none; /* Initially hide the video container */
     }
 
     img {
@@ -50,10 +51,32 @@
   </div>
   <h1>Live Streaming</h1>
 
+  <!-- Authentication Prompt -->
+  <div id="authentication-prompt">
+    <p>Please enter the access code:</p>
+    <input type="password" id="access-code">
+    <button onclick="authenticate()">Submit</button>
+  </div>
+
   <!-- Add the text below the video feed -->
 
   <hr>
   <footer>@2023 Created by WAVE</footer>
 
+  <script>
+    function authenticate() {
+      // Replace 'your_secret_code' with the actual secret code
+      const secretCode = 'your_secret_code';
+      const enteredCode = document.getElementById('access-code').value;
+
+      if (enteredCode === secretCode) {
+        // Authentication successful, show the video container
+        document.getElementById('authentication-prompt').style.display = 'none';
+        document.querySelector('.video-container').style.display = 'block';
+      } else {
+        alert('Access denied. Invalid code.');
+      }
+    }
+  </script>
 </body>
 </html>
